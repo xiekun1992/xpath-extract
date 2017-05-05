@@ -1,0 +1,16 @@
+body * {
+    cursor: pointer !important;
+}
+*[highlight="true"],
+*[highlight-add="true"] {
+    outline: 3px solid #61DA67 !important;
+}
+*[highlight="true"]{
+	outline-color: #fd7373 !important;
+}
+*[highlight-add-single="true"]{
+    /*outline: 0 !important;*/
+    background-color: #12C4FF !important;
+    color: #fff !important;
+    box-shadow: 0 0 10px #000 !important;
+}

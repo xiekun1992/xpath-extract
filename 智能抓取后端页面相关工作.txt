@@ -1,0 +1,55 @@
+﻿后端处理：
+
+输入：网址
+
+渲染页面：根据传入的网址访问网站并在后端解析出页面（包括多页面和Ajax单页面）
+
+处理页面内容：
+	从渲染好的页面中，
+	1、删除全部的script标签
+	2、删除a标签的href属性
+	3、删除所有元素的事件绑定属性（如：onclick、onsubmit，带on开头的）
+	4、把相对路径引用转换为http://开头的绝对路径（包括页面内容中标签的src='...'、href='....'、this.src='...'、this.href='....'、css样式中带有url('....')的值）
+	5、替换input和button的type="submit" 为 type="button"
+
+输出：处理后的页面内容
+
+接口处理：
+
+前端处理：
+
+添加用户交互的脚本和样式显示
+<style>
+	body * {
+		cursor: pointer;
+	}
+	.highlight,
+	.highlight_add {
+		outline: 3px solid #f00 !important;
+	}
+</style>
+<script>
+var all = document.querySelectorAll("body *");
+
+all.forEach(function(o, i){
+	o.removeAttribute('href');
+  o.onmouseover = function(e){
+    e.stopPropagation();
+    o.classList.add('highlight');
+  }
+  o.onmouseout = function(){
+    o.classList.remove('highlight');
+  }
+  o.onclick = function(e){
+  	e.stopPropagation();
+  	if(this.classList.contains('highlight_add')){
+  		this.classList.remove('highlight_add');
+  		this.classList.remove('highlight');
+  	}else{
+  		this.classList.add('highlight_add');
+  	}
+  }
+})
+</script>
+
+将用户选择的节点传递给接口，获取到匹配的节点显示到界面上

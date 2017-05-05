@@ -1,0 +1,575 @@
+<html lang="en-US"><head><script type="text/javascript" async="" src="http://www.google-analytics.com/plugins/ga/inpage_linkid.js" id="undefined"></script>
+<title>Spring Data</title>
+<link rel="icon" type="image/png" href="http://projects.spring.io/spring-data/favicon.png">
+<link rel="stylesheet" type="text/css" href="http://projects.spring.io/spring-data/bootstrap/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="http://projects.spring.io/spring-data/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="http://projects.spring.io/spring-data/bootstrap/css/bootstrap-select.css">
+<link rel="stylesheet" type="text/css" href="http://projects.spring.io/spring-data/css/main.css.css">
+<link rel="stylesheet" type="text/css" href="http://projects.spring.io/spring-data/css/typography.css.css">
+<link rel="stylesheet" type="text/css" href="http://projects.spring.io/spring-data/css/icons.css.css">
+<link rel="stylesheet" type="text/css" href="http://projects.spring.io/spring-data/css/projects.css.css">
+<link rel="stylesheet" type="text/css" href="http://projects.spring.io/spring-data/css/buttons.css.css">
+<link rel="stylesheet" type="text/css" href="http://projects.spring.io/spring-data/css/guide.css.css">
+<link rel="stylesheet" type="text/css" href="http://projects.spring.io/spring-data/css/highlight.css.css">
+<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" src="http://projects.spring.io/spring-data/js/jquery.js"></script>
+<script type="text/javascript" src="http://projects.spring.io/spring-data/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://projects.spring.io/spring-data/bootstrap/js/bootstrap-select.js"></script>
+<script type="text/javascript" src="http://projects.spring.io/spring-data/js/underscore.js"></script>
+<script type="text/javascript" src="http://projects.spring.io/spring-data/js/backbone.js"></script>
+<script type="text/javascript" src="http://projects.spring.io/spring-data/js/projectDocumentationWidget.js"></script>
+<script type="text/javascript" src="http://projects.spring.io/spring-data/js/application.js"></script>
+<script type="text/javascript" src="http://projects.spring.io/spring-data/js/ZeroClipboard.min.js"></script>
+<script type="text/javascript">
+        var apiBaseUrl = "http://spring.io";
+        var projectId = "spring-data";
+        var siteBaseUrl = "/spring-data";
+    </script>
+<script type="text/javascript" src="http://projects.spring.io/spring-data/js/copySnippets.js"></script>
+<meta name="google-site-verification" content="7qGntFPD9lWAVCtUu5U77v4l68PsTHf6xpzgjQv2j2M">
+<script>
+        var _gaq = _gaq || [];
+        var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+        _gaq.push(
+            ['_require', 'inpage_linkid', pluginUrl],
+            ['_setAccount', 'UA-2728886-22'],
+            ['_trackPageview'],
+            ['b._require', 'inpage_linkid', pluginUrl],
+            ['b._setAccount', 'UA-2728886-19'],
+            ['b._trackPageview']
+        );
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+<header class="navbar header--navbar">
+<div class="navbar-inner">
+<div class="container-fluid">
+<div class="spring-logo--container">
+<a class="spring-logo" href="https://spring.io"><span></span></a>
+</div>
+<ul class="nav pull-right">
+<li class="navbar-link"><a href="https://spring.io/docs">Docs</a>
+</li>
+<li class="navbar-link"><a href="https://spring.io/guides">Guides</a></li>
+<li class="navbar-link active"><a href="https://spring.io/projects">Projects</a></li>
+<li class="navbar-link"><a href="https://spring.io/blog">Blog</a>
+</li>
+<li class="navbar-link"><a href="https://spring.io/questions">Questions</a>
+</li>
+<li class="navbar-link nav-search"><i class="icon-search navbar-search--icon js-search-input-open"></i>
+<div class="search-input-close js-search-input-close">x</div></li>
+</ul>
+</div>
+</div>
+<div class="search-dropdown--container js-search-dropdown">
+<div class="container-fluid">
+<div class="search-form--container">
+<form class="form-inline form-search" action="https://spring.io/search" method="get">
+<input type="text" class="search-query search-form--form js-search-input" placeholder="Search for documention, guides, and posts..." name="q">
+<button type="submit" class="search-form--submit">
+<i class="icon-search"></i>
+</button>
+</form>
+</div>
+</div>
+</div>
+</header>
+<div class="body--container">
+<div class="billboard--wrapper project-header--wrapper">
+<div class="billboard--container">
+<div class="project-icon">
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span8 billboard--area">
+<div class="content--title">
+<p><a href="http://projects.spring.io">Projects</a></p>
+</div>
+<div class="project--title">Spring Data</div>
+<div class="project--description">
+<p>Spring Data’s mission is to provide a familiar and consistent, Spring-based programming model for data access while still retaining the special traits of the underlying data store.
+<br><br>
+It makes it easy to use data access technologies, relational and non-relational databases, map-reduce frameworks, and cloud-based data services. This is an umbrella project which contains many subprojects that are specific to a given database. The projects are developed by working together with many of the companies and developers that are behind these exciting technologies.</p>
+</div>
+<a class="btn btn-black uppercase project-quickstart-btn" href="#quick-start">Quick Start</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="project-body--wrapper">
+<div class="project-body--container">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span8">
+<div class="project-body--section">
+<h2 id="features">Features</h2>
+<ul>
+<li>Powerful repository and custom object-mapping abstractions</li>
+<li>Dynamic query derivation from repository method names</li>
+<li>Implementation domain base classes providing basic properties</li>
+<li>Support for transparent auditing (created, last changed)</li>
+<li>Possibility to integrate custom repository code</li>
+<li>Easy Spring integration via JavaConfig and custom XML namespaces</li>
+<li>Advanced integration with Spring MVC controllers</li>
+<li>Experimental support for cross-store persistence</li>
+</ul>
+<p><a name="main-modules"></a></p>
+<h2 id="main-modules">Main modules</h2>
+ 
+<ul>
+<li><a href="http://docs.spring.io/spring-data/commons/docs/current/reference/html/">Spring Data Commons</a> - Core Spring concepts underpinning every Spring Data project.</li>
+<li><a href="http://projects.spring.io/spring-data-gemfire">Spring Data Gemfire</a> - Provides easy configuration and access to GemFire from Spring applications.</li>
+<li><a href="http://projects.spring.io/spring-data-jpa">Spring Data JPA</a> - Makes it easy to implement JPA-based repositories.</li>
+<li><a href="https://github.com/spring-projects/spring-data-keyvalue">Spring Data KeyValue</a> - <code class="highlighter-rouge">Map</code>-based repositories and SPIs to easily build a Spring Data module for key-value stores.</li>
+<li><a href="http://projects.spring.io/spring-data-ldap">Spring Data LDAP</a> - Provides Spring Data repository support for <a href="https://github.com/spring-projects/spring-ldap">Spring LDAP</a>.</li>
+<li><a href="http://projects.spring.io/spring-data-mongodb">Spring Data MongoDB</a> - Spring based, object-document support and repositories for MongoDB.</li>
+<li><a href="http://projects.spring.io/spring-data-rest">Spring Data REST</a> - Exports Spring Data repositories as hypermedia-driven RESTful resources.</li>
+<li><a href="http://projects.spring.io/spring-data-redis">Spring Data Redis</a> - Provides easy configuration and access to Redis from Spring applications.</li>
+<li><a href="http://projects.spring.io/spring-data-cassandra">Spring Data for Apache Cassandra</a> - Spring Data module for Apache Cassandra.</li>
+<li><a href="http://projects.spring.io/spring-data-solr">Spring Data for Apache Solr</a> - Spring Data module for Apache Solr.</li>
+</ul>
+<p><a name="community-modules"></a></p>
+<h2 id="community-modules">Community modules</h2>
+<ul>
+<li><a href="https://github.com/spring-projects/spring-data-aerospike">Spring Data Aerospike</a> - Spring Data module for Aerospike.</li>
+<li><a href="http://projects.spring.io/spring-data-couchbase">Spring Data Couchbase</a> - Spring Data module for Couchbase.</li>
+<li><a href="https://github.com/michaellavelle/spring-data-dynamodb">Spring Data DynamoDB</a> - Spring Data module for DynamoDB.</li>
+<li><a href="http://projects.spring.io/spring-data-elasticsearch">Spring Data Elasticsearch</a> - Spring Data module for Elasticsearch.</li>
+<li><a href="https://github.com/hazelcast/spring-data-hazelcast">Spring Data Hazelcast</a> - Provides Spring Data repository support for Hazelcast.</li>
+<li><a href="http://projects.spring.io/spring-data-neo4j">Spring Data Neo4j</a> - Spring based, object-graph support and repositories for Neo4j.</li>
+</ul>
+<p><a name="related-modules"></a></p>
+<h2 id="related-modules">Related modules</h2>
+<ul>
+<li><a href="http://projects.spring.io/spring-data-jdbc-ext">Spring Data JDBC Extensions</a> - Provides extensions to the JDBC support provided in the Spring Framework.</li>
+<li><a href="http://projects.spring.io/spring-hadoop">Spring for Apache Hadoop</a> - Simplifies Apache Hadoop by providing a unified configuration model and easy to use APIs for using HDFS, MapReduce, Pig, and Hive.</li>
+</ul>
+<p><a name="release-train"></a></p>
+<h2 id="release-train">Release train</h2>
+<p>Spring Data is an umbrella project consisting of independent projects with, in principle, different release cadences. To manage the portfolio, a BOM (Bill of Materials - see this <a href="https://github.com/spring-projects/spring-data-examples/tree/master/bom">example</a>) is published with a curated set of dependencies on the individual project. The release trains have names, not versions, to avoid confusion with the sub-projects.</p>
+<p>The names are an alphabetic sequence (so you can sort them chronologically) with names of famous computer scientists and software developers. When point releases of the individual projects accumulate to a critical mass, or if there is a critical bug in one of them that needs to be available to everyone, the release train will push out “service releases” with names ending “-SRX”, where “X” is a number.</p>
+<p>Currently the release train contains the following modules:</p>
+<ul>
+<li>Spring Data Commons</li>
+<li>Spring Data JPA</li>
+<li>Spring Data KeyValue</li>
+<li>Spring Data LDAP</li>
+<li>Spring Data MongoDB</li>
+<li>Spring Data Gemfire</li>
+<li>Spring Data REST</li>
+<li>Spring Data Redis</li>
+<li>Spring Data for Apache Cassandra</li>
+<li>Spring Data for Apache Solr</li>
+<li>Spring Data Couchbase (community module)</li>
+<li>Spring Data Elasticsearch (community module)</li>
+<li>Spring Data Neo4j (community module)</li>
+</ul>
+<p><a name="quick-start"></a></p>
+<h2 id="quick-start">Quick Start</h2>
+<div id="download-widget">
+<div class="row-fluid download-widget--container">
+<div class="download-widget--header js-item-dropdown-widget--wrapper">
+<div class="download-widget--title">
+Download
+</div>
+<div data-download-widget-controls="" style="display: inline-block">
+    <div class="js-download-widget-selector">
+        <select class="selector selectpicker" style="display: none;">
+            
+            <option value="0" data-content="
+                        <span>Kay-M2</span>
+                        
+                        <div class='spring-icon spring-icon-pre-release'></div>" data-current="false">
+                ()
+            </option>
+            
+            <option value="1" data-content="
+                        <span>Kay-BUILD-SNAPSHOT</span>
+                        
+                        <div class='spring-icon spring-icon-snapshot-release'></div>" data-current="false">
+                ()
+            </option>
+            
+            <option value="2" data-content="
+                        <span>Ingalls-SR3</span>
+                        
+                        <div class='spring-icon spring-icon-ga-release'></div>" data-current="false">
+                ()
+            </option>
+            
+            <option value="3" data-content="
+                        <span>Ingalls-BUILD-SNAPSHOT</span>
+                        
+                        <div class='spring-icon spring-icon-snapshot-release'></div>" data-current="false">
+                ()
+            </option>
+            
+            <option value="4" data-content="
+                        <span>Hopper-SR10</span>
+                        
+                        <div class='spring-icon spring-icon-ga-release'></div>" data-current="false">
+                ()
+            </option>
+            
+        </select><div class="btn-group bootstrap-select selector"><button type="button" class="dropdown-toggle" data-toggle="dropdown"><div class="item-dropdown--icon icon-reorder pull-right"></div><div class="filter-option pull-left">
+                        <span>Kay-M2</span>
+                        
+                        <div class="spring-icon spring-icon-pre-release"></div></div>&nbsp;</button><div class="dropdown-menu open"><ul class="dropdown-menu inner" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style="">
+                        <span>Kay-M2</span>
+                        
+                        <div class="spring-icon spring-icon-pre-release"></div><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style="">
+                        <span>Kay-BUILD-SNAPSHOT</span>
+                        
+                        <div class="spring-icon spring-icon-snapshot-release"></div><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style="">
+                        <span>Ingalls-SR3</span>
+                        
+                        <div class="spring-icon spring-icon-ga-release"></div><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="3"><a tabindex="0" class="" style="">
+                        <span>Ingalls-BUILD-SNAPSHOT</span>
+                        
+                        <div class="spring-icon spring-icon-snapshot-release"></div><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style="">
+                        <span>Hopper-SR10</span>
+                        
+                        <div class="spring-icon spring-icon-ga-release"></div><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li></ul></div></div>
+    </div>
+
+    <div class="item-slider-widget js-item-slider--wrapper">
+        <div class="item-slider--container">
+            <div class="item--slider js-item--slider"></div>
+            <div class="item js-active js-item" data-snippet-type="maven">
+                Maven
+            </div>
+            <div class="item js-item" data-snippet-type="gradle">
+                Gradle
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<div class="download-widget--body">
+<p>The recommended way to get started using <code>spring-data</code> in
+your project is with a dependency management system – the snippet below can
+be copied and pasted into your build. Need help? See our getting started guides
+on building with <a href="https://spring.io/guides/gs/maven/">Maven</a> and
+<a href="https://spring.io/guides/gs/gradle/">Gradle</a>.
+</p>
+<div class="js-download-maven-widget"><div class="highlight"><button class="copy-button snippet" id="copy-button-snippet" data-clipboard-target="code-block-snippet"></button><pre id="code-block-snippet"><code><span class="nt">&lt;dependencyManagement&gt;</span>
+    <span class="nt">&lt;dependencies&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>org.springframework.data<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>spring-data-releasetrain<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>Kay-M2<span class="nt">&lt;/version&gt;</span>
+            <span class="nt">&lt;type&gt;</span>pom<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;scope&gt;</span>import<span class="nt">&lt;/scope&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
+    <span class="nt">&lt;/dependencies&gt;</span>
+<span class="nt">&lt;/dependencyManagement&gt;</span><span class="nt">&lt;repositories&gt;</span>
+    <span class="nt">&lt;repository&gt;</span>
+        <span class="nt">&lt;id&gt;</span>spring-milestones<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Spring Milestones<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;url&gt;</span>https://repo.spring.io/libs-milestone<span class="nt">&lt;/url&gt;</span>
+        <span class="nt">&lt;snapshots&gt;</span>
+            <span class="nt">&lt;enabled&gt;</span>false<span class="nt">&lt;/enabled&gt;</span>
+        <span class="nt">&lt;/snapshots&gt;</span>
+    <span class="nt">&lt;/repository&gt;</span>
+<span class="nt">&lt;/repositories&gt;</span></code></pre></div></div>
+</div>
+</div>
+</div>
+<p>For a quick taste, look at the following domain object:</p>
+<div class="language-java highlighter-rouge"><button class="copy-button snippet" id="copy-button-0" data-clipboard-target="code-block-0"></button><pre class="highlight" id="code-block-0"><code><span class="nd">@Entity</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Employee</span> <span class="o">{</span>
+
+  <span class="kd">private</span> <span class="nd">@Id</span> <span class="nd">@GeneratedValue</span> <span class="n">Long</span> <span class="n">id</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="n">String</span> <span class="n">firstName</span><span class="o">,</span> <span class="n">lastName</span><span class="o">,</span> <span class="n">description</span><span class="o">;</span>
+
+  <span class="kd">private</span> <span class="nf">Employee</span><span class="o">()</span> <span class="o">{}</span>
+
+  <span class="kd">public</span> <span class="nf">Employee</span><span class="o">(</span><span class="n">String</span> <span class="n">firstName</span><span class="o">,</span> <span class="n">String</span> <span class="n">lastName</span><span class="o">,</span> <span class="n">String</span> <span class="n">description</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">firstName</span> <span class="o">=</span> <span class="n">firstName</span><span class="o">;</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">lastName</span> <span class="o">=</span> <span class="n">lastName</span><span class="o">;</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">description</span> <span class="o">=</span> <span class="n">description</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+<p>This defines a simple JPA entity with a few fields. The following code shows a simple repository definition:</p>
+<div class="language-java highlighter-rouge"><button class="copy-button snippet" id="copy-button-1" data-clipboard-target="code-block-1"></button><pre class="highlight" id="code-block-1"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">EmployeeRepository</span> <span class="kd">extends</span> <span class="n">CrudRepository</span><span class="o">&lt;</span><span class="n">Employee</span><span class="o">,</span> <span class="n">Long</span><span class="o">&gt;</span> <span class="o">{</span>
+
+  <span class="n">Employee</span> <span class="nf">findByFirstName</span><span class="o">(</span><span class="n">String</span> <span class="n">firstName</span><span class="o">);</span>
+
+  <span class="n">List</span><span class="o">&lt;</span><span class="n">Employee</span><span class="o">&gt;</span> <span class="nf">findByLastName</span><span class="o">(</span><span class="n">String</span> <span class="n">lastName</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+<p>This interface extends Spring Data’s <code class="highlighter-rouge">CrudRepository</code> and defines the type (<code class="highlighter-rouge">Employee</code>) and the id type (<code class="highlighter-rouge">Long</code>). Put this code inside a Spring Boot application with <code class="highlighter-rouge">spring-boot-starter-data-jpa</code> like this:</p>
+<div class="language-java highlighter-rouge"><button class="copy-button snippet" id="copy-button-2" data-clipboard-target="code-block-2"></button><pre class="highlight" id="code-block-2"><code><span class="nd">@SpringBootApplication</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyApp</span> <span class="o">{</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">SpringApplication</span><span class="o">.</span><span class="na">run</span><span class="o">(</span><span class="n">MyApp</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+<p>Launch your app and Spring Data (having been autoconfigured by Boot, <a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-sql">SQL</a> or <a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-nosql">NoSQL</a>) will automatically craft a concrete set of operations:</p>
+<ul>
+<li><code class="highlighter-rouge">save(Employee)</code></li>
+<li><code class="highlighter-rouge">delete(Employee)</code></li>
+<li><code class="highlighter-rouge">find(Employee)</code></li>
+<li><code class="highlighter-rouge">find(Long)</code></li>
+<li><code class="highlighter-rouge">findAll()</code></li>
+</ul>
+<p>On top of the CRUD operations inherited from <code class="highlighter-rouge">CrudRepository</code>, the interface defines two query methods.</p>
+<ul>
+<li><code class="highlighter-rouge">findByFirstName(…)</code> automatically writes a JPA query based on firstName and only return the first employee found.</li>
+<li><code class="highlighter-rouge">findByLastName(…)</code> automatically writes a JPA query based on lastName and returns a collection.</li>
+</ul>
+<p><a name="spring-boot-starters"></a></p>
+<h2 id="spring-boot-starters">Spring Boot starters</h2>
+<p>If you are using Spring Boot, you will inherit predefined versions for each project. To plugin a newer or older release train, configure the <code class="highlighter-rouge">spring-data-releasetrain.version</code> property to the release train iteration name you want to use.</p>
+<p>Spring Boot provides so called started POMs for a variety of SPring Data modules which pull in a curated set of dependencies you’ll need to use the individual modules. For details on that see the <a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter-poms">Spring Boot reference documentation</a>.</p>
+<div style="padding-bottom: 20px;"></div>
+ 
+</div>
+</div>
+<div class="span4">
+<div class="js-documentation-widget">
+    <div class="right-pane-widget--container no-top-border project-documentation--container">
+        <div class="item-dropdown-widget">
+            <div class="item-dropdown--title">Spring Data</div>
+            <div class="item--dropdown">
+                <div class="item--body">
+                    <div class="item--body-title">
+                        <div>Release</div>
+                    </div>
+                    
+                    <div class="item--body--version">
+                        <div>
+                            <p><a href="#quick-start">Kay-M2</a></p>
+                            
+                            <div class="spring-icon spring-icon-pre-release"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item--body--version">
+                        <div>
+                            <p><a href="#quick-start">Kay-BUILD-SNAPSHOT</a></p>
+                            
+                            <div class="spring-icon spring-icon-snapshot-release"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item--body--version">
+                        <div>
+                            <p><a href="#quick-start">Ingalls-SR3</a></p>
+                            
+                            <div class="spring-icon spring-icon-ga-release"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item--body--version">
+                        <div>
+                            <p><a href="#quick-start">Ingalls-BUILD-SNAPSHOT</a></p>
+                            
+                            <div class="spring-icon spring-icon-snapshot-release"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item--body--version">
+                        <div>
+                            <p><a href="#quick-start">Hopper-SR10</a></p>
+                            
+                            <div class="spring-icon spring-icon-ga-release"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="right-pane-widget--container no-top-border">
+<div class="project-sub-link--wrapper">
+<div class="project-sub-link">
+<a href="https://twitter.com/SpringData">
+<div class="spring-icon project-badges twitter" alt="Twitter" title="Twitter">
+</div>
+</a>
+</div>
+<div class="project-sub-link">
+<a href="https://stackoverflow.com/questions/tagged/spring-data">
+<div class="spring-icon project-badges stackoverflow" alt="StackOverflow" title="StackOverflow">
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="right-pane-widget--container no-top-border project-sidebar-resource--wrapper">
+<ul>
+<li><a href="https://github.com/spring-projects/spring-data-examples/tree/master/bom">Spring Data - Release Train BOM Example</a></li>
+<li><a href="https://github.com/spring-projects/spring-data-examples">Spring Data Examples</a></li>
+<li><a href="https://www.amazon.com/Spring-Data-Mark-Pollack/dp/1449323952">Spring Data Book</a></li>
+<li><a href="https://spring.io/guides?filter=spring%20data">Getting Started Guides</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span8">
+<div class="navbar">
+<div class="container">
+<ul class="nav">
+<li><a href="https://spring.io/team">Team</a></li>
+<li><a href="https://spring.io/services">Services</a></li>
+<li><a href="https://spring.io/tools">Tools</a></li>
+</ul>
+</div>
+</div>
+© <script type="text/javascript"> var d = new Date();
+                    document.write(d.getFullYear());</script>2017 <a href="https://www.pivotal.io">Pivotal Software</a>, Inc. All Rights Reserved.
+<a href="https://www.pivotal.io/terms-of-use">Terms of Use</a> and
+<a href="https://www.pivotal.io/privacy-policy">Privacy</a>
+</div>
+<div class="span4 footer-newsletter--wrapper pull-right">
+<div class="footer-newsletter--container">
+<label>Subscribe to our newsletter</label>
+<iframe frameborder="0" height="42px" scrolling="no" src="http://play.gopivotal.com/OSS_Website_Spring_SpringNewsletterSubscriptionEmailOnly.html" style="border:none" width="324px"></iframe>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div id="scrim"></div>
+<script type="text/html" id="project-documentation-widget-template">
+    <div class="right-pane-widget--container no-top-border project-documentation--container">
+        <div class="item-dropdown-widget">
+            <div class="item-dropdown--title">{@= name @}</div>
+            <div class="item--dropdown">
+                <div class="item--body">
+                    <div class="item--body-title">
+                        <div>Release</div>
+                    </div>
+                    {@ _.each(releases, function(release) { @}
+                    <div class="item--body--version">
+                        <div>
+                            <p><a href="#quick-start">{@= release.versionDisplayName @}</a></p>
+                            {@ if(release.current) { @}
+                                <div class="spring-icon spring-icon-current-version"></div>
+                            {@ } @}
+                            <div class="spring-icon {@= release.statusIconClass() @}"></div>
+                        </div>
+                    </div>
+                    {@ }); @}
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="project-download-widget-controls-template">
+    <div class="js-download-widget-selector">
+        <select class='selector selectpicker'>
+            {@ _.each(releases, function(release, index) { @}
+            <option value="{@= index @}"
+                    data-content="
+                        <span>{@= release.versionDisplayName @}</span>
+                        {@ if(release.current) { @}
+                            <div class='spring-icon spring-icon-current-version'></div>
+                        {@ } @}
+                        <div class='spring-icon {@= release.statusIconClass() @}'/>"
+                    data-current="{@= release.current @}">
+                ()
+            </option>
+            {@ }); @}
+        </select>
+    </div>
+
+    <div class="item-slider-widget js-item-slider--wrapper">
+        <div class="item-slider--container">
+            <div class="item--slider js-item--slider"></div>
+            <div class="item js-active js-item" data-snippet-type='maven'>
+                Maven
+            </div>
+            <div class="item js-item" data-snippet-type='gradle'>
+                Gradle
+            </div>
+        </div>
+    </div>
+
+</script>
+<script type="text/html" id="project-download-maven-widget-template">
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;dependencyManagement&gt;</span>
+    <span class="nt">&lt;dependencies&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>{@= groupId @}<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>spring-data-releasetrain<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>{@= version @}<span class="nt">&lt;/version&gt;</span>
+            <span class="nt">&lt;type&gt;</span>pom<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;scope&gt;</span>import<span class="nt">&lt;/scope&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
+    <span class="nt">&lt;/dependencies&gt;</span>
+<span class="nt">&lt;/dependencyManagement&gt;</span></code></pre></figure>
+</script>
+<script type="text/html" id="project-repository-maven-widget-template">
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;repositories&gt;</span>
+    <span class="nt">&lt;repository&gt;</span>
+        <span class="nt">&lt;id&gt;</span>{@= repository.id @}<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>{@= repository.name @}<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;url&gt;</span>{@= repository.url @}<span class="nt">&lt;/url&gt;</span>
+        <span class="nt">&lt;snapshots&gt;</span>
+            <span class="nt">&lt;enabled&gt;</span>{@= repository.snapshotsEnabled @}<span class="nt">&lt;/enabled&gt;</span>
+        <span class="nt">&lt;/snapshots&gt;</span>
+    <span class="nt">&lt;/repository&gt;</span>
+<span class="nt">&lt;/repositories&gt;</span></code></pre></figure>
+</script>
+<script type="text/html" id="project-download-gradle-widget-template">
+<figure class="highlight"><pre><code class="language-groovy" data-lang="groovy"><span class="n">buildscript</span> <span class="o">{</span>
+  <span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">classpath</span> <span class="s2">"io.spring.gradle:dependency-management-plugin:0.4.0.RELEASE"</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">apply</span> <span class="nl">plugin:</span> <span class="s2">"io.spring.dependency-management"</span>
+
+<span class="n">dependencyManagement</span> <span class="o">{</span>
+  <span class="n">imports</span> <span class="o">{</span>
+    <span class="n">mavenBom</span> <span class="s1">'{@= groupId @}:spring-data-releasetrain:{@= version @}'</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">compile</span> <span class="s1">'{@= groupId @}:spring-data-jpa'</span>
+    <span class="n">compile</span> <span class="s1">'{@= groupId @}:spring-data-rest'</span>
+<span class="o">}</span></code></pre></figure>
+</script>
+<script type="text/html" id="project-repository-gradle-widget-template">
+<figure class="highlight"><pre><code class="language-groovy" data-lang="groovy"><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">maven</span> <span class="o">{</span>
+        <span class="n">url</span> <span class="s1">'{@= repository.url @}'</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+</script>
+<script type="text/html" id="project-download-zip-widget-template">
+This is a zip url
+</script>
+
+
+<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" data-clipboard-ready="true" style="position: absolute; left: -9999px; top: -9999px; width: 15px; height: 15px; z-index: 9999;" data-original-title="" title="">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="/spring-data/js/ZeroClipboard.swf?nocache=1493966819213">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="">         <embed src="/spring-data/js/ZeroClipboard.swf?nocache=1493966819213" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="" scale="exactfit">                </object></div>
+
+<link rel="stylesheet" href="style.css">
+<script src="xpath.js"></script>
+<script src="operation.js"></script>
+
+</body></html>
